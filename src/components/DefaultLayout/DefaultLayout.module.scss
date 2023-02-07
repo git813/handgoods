@@ -1,0 +1,112 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 300px;
+}
+
+.header {
+    height: 120px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+    .header-left {
+        display: flex;
+        gap: 20px;
+
+        .logo {
+            width: 128px;
+            height: 50px;
+            border-radius: 45px;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .search {
+            position: relative;
+            input {
+                width: 600px;
+                height: 66px;
+                background-color: var(--primary-color);
+                border-radius: 45px;
+                font-size: 1.4rem;
+                padding: 0 20px;
+                outline: none;
+            }
+
+            input::-webkit-input-placeholder {
+                font-style: italic;
+            }
+
+            .search-icon {
+                position: absolute;
+                right: 20px;
+                color: var(--secondary-color);
+                top: 6px;
+            }
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    svg {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    background-color: #d9d9d9;
+    background-image: url(../../../public/footer.png);
+    background-size: 100% 100%;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-evenly;
+    gap: 120px;
+
+    .logo {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
+
+    .policy {
+        text-align: left;
+        font-size: 1.6rem;
+
+        div {
+            color: #5c5959;
+            font-size: 1.2rem;
+        }
+
+        div:hover {
+            color: var(--secondary-color);
+            cursor: pointer;
+        }
+    }
+
+    .contact {
+        font-size: 2rem;
+        line-height: 3rem;
+        svg {
+            margin: 6px 10px 0 10px;
+            cursor: pointer;
+        }
+    }
+}

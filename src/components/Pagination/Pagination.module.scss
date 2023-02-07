@@ -1,0 +1,18 @@
+.pagination {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    padding: 40px;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    div:not(.skip-page):hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

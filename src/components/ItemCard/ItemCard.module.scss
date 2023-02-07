@@ -1,0 +1,46 @@
+.item-card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 480px;
+    background-color: #d9d9d9;
+    box-shadow: 0px 4px 50px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 39px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 4px;
+
+    .name {
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding-top: 8px;
+        text-align: center;
+    }
+
+    .origin-price {
+        text-decoration: line-through;
+        font-size: 1rem;
+        opacity: 0.5;
+    }
+
+    .sale-price {
+        font-size: 1.4rem;
+    }
+
+    .product-image {
+        width: 230px;
+        height: 280px;
+        border-radius: 24px;
+    }
+
+    .country-image {
+        width: 28px;
+        height: 20px;
+    }
+}
+
+.item-card:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}

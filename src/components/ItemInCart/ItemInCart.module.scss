@@ -1,0 +1,91 @@
+.item {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 145px;
+    background-color: #d9d9d9;
+    gap: 40px;
+
+    .cb {
+        position: relative;
+
+        input {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 8px;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+            border: 2px solid var(--secondary-color);
+            z-index: 1;
+        }
+
+        input:checked {
+            background-color: var(--secondary-color);
+        }
+
+        svg {
+            z-index: 0;
+            cursor: pointer;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            color: var(--primary-color);
+        }
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 24px;
+    }
+
+    .amount {
+        display: flex;
+        align-items: center;
+        color: var(--secondary-color);
+        font-size: 4rem;
+        gap: 20px;
+
+        svg {
+            height: 60px;
+            width: 60px;
+            padding: 0;
+        }
+
+        .amount-value {
+            position: relative;
+            line-height: 60px;
+            height: 60px;
+            width: 30px;
+            font-size: 2rem;
+            text-align: center;
+
+            div {
+                position: absolute;
+                background-color: var(--secondary-color);
+                width: 92px;
+                height: 4px;
+            }
+
+            .border-top {
+                left: -28px;
+                top: 6px;
+            }
+
+            .border-bottom {
+                left: -28px;
+                bottom: 7px;
+            }
+        }
+
+        .change {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

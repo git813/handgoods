@@ -1,0 +1,193 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 60px 40px;
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            img {
+                height: 600px;
+            }
+
+            .sub-image {
+                padding: 40px;
+                display: flex;
+                column-gap: 40px;
+                width: 100%;
+
+                div {
+                    display: flex;
+
+                    img {
+                        cursor: pointer;
+                        margin: 0 4px;
+                        border: 2px solid var(--secondary-color);
+                        width: 160px;
+                        height: 160px;
+                    }
+                }
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+
+            .name {
+                font-size: 2.6rem;
+            }
+
+            .country {
+                display: flex;
+                gap: 10px;
+                img {
+                    width: 60px;
+                    height: 40px;
+                }
+            }
+
+            .origin-price {
+                opacity: 0.5;
+                text-decoration: line-through;
+            }
+
+            .sale-price {
+                font-size: 2.2rem;
+            }
+
+            .amount {
+                display: flex;
+                align-items: center;
+                color: var(--secondary-color);
+                font-size: 4rem;
+                gap: 20px;
+
+                svg {
+                    height: 60px;
+                    width: 60px;
+                    padding: 0;
+                }
+
+                .amount-value {
+                    position: relative;
+                    line-height: 60px;
+                    height: 60px;
+                    width: 30px;
+                    font-size: 2rem;
+                    text-align: center;
+
+                    div {
+                        position: absolute;
+                        background-color: var(--secondary-color);
+                        width: 92px;
+                        height: 4px;
+                    }
+
+                    .border-top {
+                        left: -28px;
+                        top: 6px;
+                    }
+
+                    .border-bottom {
+                        left: -28px;
+                        bottom: 7px;
+                    }
+                }
+
+                .change {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                width: 200px;
+                height: 63px;
+                background-color: var(--primary-color);
+                border-radius: 45px;
+                outline: none;
+                border: none;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+                font-size: 1.6rem;
+                cursor: pointer;
+                margin-bottom: 40px;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            .ship-info {
+                display: flex;
+                align-items: center;
+
+                .ship-time {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .heading-part {
+        width: 100%;
+        background-color: var(--secondary-color);
+        height: 100px;
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        vertical-align: middle;
+        line-height: 100px;
+    }
+
+    .describe {
+        padding: 40px 100px;
+        font-size: 2rem;
+    }
+
+    .part {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .item-list {
+            width: 100%;
+            display: grid;
+            padding: 40px;
+            row-gap: 40px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        button {
+            width: 270px;
+            height: 63px;
+            margin: 0 auto;
+            background-color: var(--primary-color);
+            border-radius: 45px;
+            outline: none;
+            border: none;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            font-size: 2rem;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    }
+}
