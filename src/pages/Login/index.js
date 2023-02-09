@@ -1,12 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.scss";
 import classNames from "classnames/bind";
+import { GrLinkPrevious } from "react-icons/gr";
 const cx = classNames.bind(styles);
 
 function Login(params) {
     const navigate = useNavigate();
     return (
         <div className={cx("login")}>
+            <div className={cx("btn-home")}>
+                <GrLinkPrevious onClick={() => navigate("/")} />
+            </div>
             <div className={cx("heading")}>Đăng nhập</div>
             <div className={cx("text")}>Bạn đã có tài khoản? Đăng nhập ngay!</div>
             <input placeholder="Tên đăng nhập" />

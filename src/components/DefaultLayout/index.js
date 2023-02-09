@@ -1,6 +1,14 @@
 import styles from "./DefaultLayout.module.scss";
 import classNames from "classnames/bind";
-import { IoHome, IoCart, IoSearchSharp, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
+import {
+    IoHome,
+    IoCart,
+    IoSearchSharp,
+    IoLogoFacebook,
+    IoLogoInstagram,
+    IoLogoTwitter,
+    IoNotificationsSharp,
+} from "react-icons/io5";
 import { FaTelegramPlane } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 const cx = classNames.bind(styles);
@@ -19,6 +27,38 @@ function DefaultLayout({ children }) {
                     <div className={cx("search")}>
                         <input placeholder="Bạn muốn tìm thứ gì? Viết ngay vào đây!" />
                         <IoSearchSharp className={cx("search-icon")} />
+                    </div>
+                    <div className={cx("notify")}>
+                        <IoNotificationsSharp />
+                        <div className={cx("notify-list")} id="notify">
+                            <div className={cx("notify-item")} onClick={() => navigate("/order-status")}>
+                                <img src="../phone.png" />
+                                <div className={cx("text")}>
+                                    <div className={cx("title")}>Xác nhận đơn hàng</div>
+                                    <div className={cx("content")}>
+                                        Đơn hàng <b>#123456</b> đã được xác nhận thành công
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={cx("notify-item")} onClick={() => navigate("/order-status")}>
+                                <img src="../phone.png" />
+                                <div className={cx("text")}>
+                                    <div className={cx("title")}>Xác nhận đơn hàng</div>
+                                    <div className={cx("content")}>
+                                        Đơn hàng <b>#123456</b> đã được xác nhận thành công
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={cx("notify-item")} onClick={() => navigate("/order-status")}>
+                                <img src="../phone.png" />
+                                <div className={cx("text")}>
+                                    <div className={cx("title")}>Xác nhận đơn hàng</div>
+                                    <div className={cx("content")}>
+                                        Đơn hàng <b>#123456</b> đã được xác nhận thành công
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <IoCart onClick={() => navigate("/cart")} />
                     <img className={cx("avatar")} src="../avatar-default.jpg" onClick={() => navigate("/login")} />

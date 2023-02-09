@@ -1,12 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Signup.module.scss";
 import classNames from "classnames/bind";
+import { GrLinkPrevious } from "react-icons/gr";
 const cx = classNames.bind(styles);
 
 function Signup(params) {
     const navigate = useNavigate();
     return (
         <div className={cx("login")}>
+            <div className={cx("btn-home")}>
+                <GrLinkPrevious onClick={() => navigate("/")} />
+            </div>
             <div className={cx("heading")}>Đăng ký</div>
             <div className={cx("text")}>Chỉ mất vài giây, mua hàng liền tay!</div>
             <input placeholder="Tên đăng nhập" />

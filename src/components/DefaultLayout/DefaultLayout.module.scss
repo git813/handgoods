@@ -29,6 +29,82 @@
         display: flex;
         align-items: center;
         gap: 16px;
+
+        .notify {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .notify-list {
+                color: black;
+                width: 500px;
+                min-height: 600px;
+                padding: 40px 0;
+                position: absolute;
+                display: none;
+                flex-direction: column;
+                left: -460px;
+                top: 60px;
+                background-color: #d9d9d9;
+                transition: all 5s;
+                border-radius: 24px;
+                border: 1px solid black;
+
+                .notify-item {
+                    display: flex;
+                    padding: 10px 40px;
+                    gap: 20px;
+                    cursor: pointer;
+
+                    img {
+                        padding-top: 6px;
+                        width: 60px;
+                        height: fit-content;
+                    }
+
+                    .title {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    .content {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        color: #3e3e3e;
+
+                        b {
+                            color: red;
+                        }
+                    }
+                }
+
+                .notify-item:hover {
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+
+        .notify::before {
+            display: none;
+            cursor: pointer;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 70px;
+            height: 80px;
+        }
+
+        .notify:hover {
+            .notify-list {
+                display: flex;
+            }
+        }
+
+        .notify:hover::before {
+            display: block;
+        }
+
         .search {
             position: relative;
             input {

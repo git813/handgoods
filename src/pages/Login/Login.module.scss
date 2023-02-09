@@ -63,4 +63,11 @@
         padding-top: 72px;
         width: 100%;
     }
+
+    .btn-home {
+        cursor: pointer;
+        position: absolute;
+        left: calc(50% - 280px);
+        top: 85px;
+    }
 }
