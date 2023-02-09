@@ -3,9 +3,11 @@ import classNames from "classnames/bind";
 import { BsFillTrashFill } from "react-icons/bs";
 import { AiFillMinusSquare, AiFillPlusSquare } from "react-icons/ai";
 import ItemInCart from "../../components/ItemInCart";
+import { useNavigate } from "react-router-dom";
 const cx = classNames.bind(styles);
 
 function Cart() {
+    const navigate = useNavigate();
     return (
         <div className={cx("container")}>
             <div className={cx("heading")}>Giỏ hàng </div>
@@ -15,7 +17,7 @@ function Cart() {
                 <ItemInCart />
                 <ItemInCart />
             </div>
-            <button>Thanh toán</button>
+            <button onClick={() => navigate("/payment")}>Thanh toán</button>
         </div>
     );
 }

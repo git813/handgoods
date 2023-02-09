@@ -66,14 +66,31 @@ function ProductInfo() {
                     </i>
                 </div>
             </div>
-            <div className={cx("heading-part")}>Phân loại phổ biến</div>
+            <div className={cx("heading-part")}>Thông tin sản phẩm</div>
             <div className={cx("describe")}>
-                Quê nội của em đẹp bởi có con sông chảy qua làng. Quanh năm cần mẫn, dòng sông chở nặng phù sa bồi đắp
-                cho ruộng lúa. Buổi sớm tinh mơ, dòng nước mờ mờ phẳng lặng chảy. Giữa trưa, mặt sông nhấp nhô ánh bạc
-                lẫn màu xanh nước biếc. Chiều tà, dòng nước trở thành màu khói trong, hơi tối âm âm. Hai bên bờ sông,
-                luỹ tre làng nối vai nhau che rợp bóng mát cho đôi bờ. Sông đẹp nhất vào những đêm trăng. Bóng trăng
-                lồng vào nước, luỹ tre làng in bóng trên dòng sông, vài chiếc thuyền neo trên bờ cát. Cảnh vật hữu tình
-                đẹp như tranh vẽ.
+                <b>
+                    Cuối cùng thì chiếc iPhone 14 Pro Max cũng đã chính thức lộ diện tại sự kiện ra mắt thường niên vào
+                    ngày 08/09 đến từ nhà Apple, kết thúc bao lời đồn đoán bằng một bộ thông số cực kỳ ấn tượng cùng vẻ
+                    ngoài đẹp mắt sang trọng. Từ ngày 14/10/2022 người dùng đã có thể mua sắm các sản phẩm iPhone 14
+                    series với đầy đủ phiên bản tại Thế Giới Di Động.
+                </b>
+                <b>Thiết kế cao cấp và vẻ ngoài sành điệu</b>
+                Sản phẩm có trong mình một diện mạo bắt mắt nhờ lối tạo hình vuông vức bắt trend tương tự thế hệ iPhone
+                13 series, đây được xem là kiểu thiết kế rất thành công trên các thế hệ trước khi tạo nên cơn sốt toàn
+                cầu về kiểu dáng điện thoại cho đến nay. Thiết kế vuông vức - iPhone 14 Pro Max 128GB Mặt lưng làm từ
+                kính cùng khung thép không gỉ giúp cho iPhone có thêm độ bền bỉ để đồng hành cùng bạn được lâu dài hơn,
+                không những thế nó còn làm cho thiết bị của bạn trở nên sang trọng và đẳng cấp hơn.
+                <img src="../ip-1.jpg" />
+                Mặt lưng làm từ kính cùng khung thép không gỉ giúp cho iPhone có thêm độ bền bỉ để đồng hành cùng bạn
+                được lâu dài hơn, không những thế nó còn làm cho thiết bị của bạn trở nên sang trọng và đẳng cấp hơn.
+                <b>Đột phá với thiết kế Dynamic island</b>
+                Để tối ưu được không gian hiển thị thì Apple cũng đã chính thức loại bỏ tai thỏ huyền thoại để thay thế
+                vào đó là kiểu bố trí hình viên thuốc độc đáo, vừa đem lại vùng hiển thị rộng rãi hơn mà đây còn là một
+                đặc điểm nhận diện dễ dàng trên chiếc iPhone 14 Pro Max.
+                <img src="../ip-2.jpg" />
+                Đây được xem là một điểm mới về phần màn hình trên dòng sản phẩm Pro Max năm nay vì cụm tai thỏ đã được
+                lược bỏ và thay thế vào đó là thiết kế hình notch viên thuốc, đi kèm với đó sẽ là tính năng Dynamic
+                Island để biến cụm này trở nên thú vị hơn qua những thông báo hay thông tin trạng thái.
             </div>
             <div className={cx("heading-part")}>Sản phẩm tương tự</div>
             <div className={cx("part")}>

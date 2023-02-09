@@ -8,6 +8,7 @@ import Signup from "../pages/Signup";
 import Cart from "../pages/Cart";
 import RequirementStatus from "../pages/RequirementStatus";
 import OrderStatus from "../pages/OrderStatus";
+import Payment from "../pages/Payment";
 import DefaultLayout from "../components/DefaultLayout";
 
 const routes = [
@@ -18,6 +19,7 @@ const routes = [
     { path: "/product-info", component: ProductInfo, layout: DefaultLayout },
     { path: "/requirement", component: RequirementStatus, layout: DefaultLayout },
     { path: "/order-status", component: OrderStatus, layout: DefaultLayout },
+    { path: "/payment", component: Payment, layout: DefaultLayout },
     { path: "/cart", component: Cart, layout: DefaultLayout },
     { path: "/login", component: Login },
     { path: "/signup", component: Signup },
